@@ -1,0 +1,32 @@
+.task-list {
+  min-height: 200px;
+}
+
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+  color: #9ca3af;
+  text-align: center;
+  border: 2px dashed #e5e7eb;
+  border-radius: 6px;
+  height: 180px;
+}
+
+.empty-icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.empty-state p {
+  margin: 0;
+  font-size: 0.875rem;
+}
+
+.empty-hint {
+  font-size: 0.75rem !important;
+  margin-top: 0.5rem !important;
+  color: #9ca3af;
+}

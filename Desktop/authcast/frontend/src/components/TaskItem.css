@@ -1,0 +1,115 @@
+.task-item {
+  background-color: white;
+  border-radius: 6px;
+  padding: 1rem;
+  margin-bottom: 0.75rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  border: 1px solid #f3f4f6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: grab;
+  transition: all 0.2s ease;
+}
+
+.task-item:hover {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  border-color: #e5e7eb;
+}
+
+.task-item:active {
+  cursor: grabbing;
+}
+
+.task-content {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex: 1;
+}
+
+.task-status {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #d1d5db;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.task-status.done {
+  border-color: #10b981;
+  background-color: #10b981;
+}
+
+.checkmark {
+  color: white;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.task-text {
+  margin: 0;
+  color: #374151;
+  font-size: 1rem;
+}
+
+.task-text.completed {
+  color: #9ca3af;
+  text-decoration: line-through;
+}
+
+.task-actions {
+  display: flex;
+  align-items: center;
+}
+
+.delete-button {
+  background-color: transparent;
+  border: none;
+  color: #9ca3af;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.delete-button:hover {
+  background-color: #fee2e2;
+  color: #ef4444;
+}
+
+.delete-icon {
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+/* Dragula specific styles */
+.gu-mirror {
+  position: fixed !important;
+  margin: 0 !important;
+  z-index: 9999 !important;
+  opacity: 0.8;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+  transform: rotate(3deg);
+}
+
+.gu-hide {
+  display: none !important;
+}
+
+.gu-unselectable {
+  user-select: none !important;
+}
+
+.gu-transit {
+  opacity: 0.4;
+  background-color: #f3f4f6 !important;
+  filter: grayscale(100%);
+  transform: scale(0.98);
+}
